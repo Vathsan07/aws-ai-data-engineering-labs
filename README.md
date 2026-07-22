@@ -1,281 +1,124 @@
-# AWS AI Data Engineering Pipeline using Amazon S3, AWS Glue & SageMaker
+# AWS AI Data Engineering Labs
 
-## Project Overview
+A hands-on portfolio demonstrating practical AI Data Engineering concepts using AWS cloud services.
 
-This project demonstrates an end-to-end AI-ready data engineering pipeline built on AWS using the UCI Bank Marketing dataset.
-
-The objective is to ingest a public dataset, prepare it for machine learning, generate metadata and audit artifacts, catalog it using AWS Glue, perform exploratory data profiling, create AI-ready labels, and produce a reusable dataset for downstream ML workflows.
-
-This project was implemented as part of the BITS Pilani AI Engineering Program using real AWS services.
+This repository documents my implementation of an end-to-end AI data engineering pipeline as part of an AWS AI/ML Engineering learning program.
 
 ---
 
-# Architecture Diagram
+## Repository Structure
 
-                 UCI Bank Marketing Dataset
-                           │
-                           ▼
-                    Download Dataset
-                           │
-                           ▼
-                     Amazon S3 (Raw)
-                           │
-          ┌────────────────┴───────────────┐
-          │                                │
-          ▼                                ▼
-     Manifest JSON                 Data Profile
-          │                                │
-          └──────────────┬─────────────────┘
-                         ▼
-                  AWS Glue Crawler
-                         │
-                         ▼
-                 Glue Data Catalog
-                         │
-                         ▼
-                  AWS Athena Queries
-                         │
-                         ▼
-              Label Engineering (Python)
-                         │
-                         ▼
-                 Curated AI Dataset
-                         │
-                         ▼
-                  Label Audit & Data Card
+```
+aws-ai-data-engineering-labs/
+
+├── Session-1/
+│
+├── Session-2/
+│   ├── AWS Data Engineering Pipeline
+│   ├── AWS Glue
+│   ├── Amazon S3
+│   ├── Amazon Athena
+│   ├── Data Catalog
+│   ├── Dataset Versioning
+│   ├── Data Profiling
+│   ├── Screenshots
+│   ├── Outputs
+│   └── Documentation
+│
+└── README.md
+```
 
 ---
 
-# Project Workflow
+# Learning Objectives
 
-```
-                UCI Bank Marketing Dataset
-                           │
-                           ▼
-                  Data Collection (Python)
-                           │
-                           ▼
-                  Amazon S3 (Raw Layer)
-                           │
-                           ▼
-               Metadata & Version Manifest
-                           │
-                           ▼
-                 AWS Glue Crawler
-                           │
-                           ▼
-                 AWS Glue Data Catalog
-                           │
-                           ▼
-                 Data Profiling & Validation
-                           │
-                           ▼
-              Feature Engineering & Labeling
-                           │
-                           ▼
-              Curated AI-ready Dataset (Parquet)
-                           │
-                           ▼
-             Audit Reports & Data Card Generation
-```
+This repository demonstrates practical implementation of:
+
+- AI Data Engineering
+- Data Lake Architecture
+- Amazon S3
+- AWS Glue Crawlers
+- AWS Glue ETL
+- AWS Glue Data Catalog
+- Amazon Athena
+- Dataset Versioning
+- Data Profiling
+- Feature Engineering
+- Data Labeling
+- AI-ready Dataset Creation
 
 ---
 
 # AWS Services Used
 
-- Amazon S3
-- AWS Glue Crawlers
-- AWS Glue Data Catalog
-- AWS Glue ETL
-- AWS IAM
-- Amazon Athena
-- Amazon SageMaker Studio
-- AWS CloudWatch (Glue execution logs)
+| Service | Purpose |
+|----------|---------|
+| Amazon S3 | Data Lake |
+| AWS Glue | ETL Processing |
+| AWS Glue Crawlers | Schema Discovery |
+| AWS Glue Data Catalog | Metadata Management |
+| Amazon Athena | SQL Analytics |
+| IAM | Security & Roles |
 
 ---
 
-# Technologies
+# Sessions
+
+| Session | Status |
+|----------|--------|
+| Session 1 | ✅ Completed |
+| Session 2 | ✅ Completed |
+| Session 3 | 🚧 Coming Soon |
+| Session 4 | 🚧 Coming Soon |
+
+---
+
+# Featured Project
+
+## Session 2 – AWS AI Data Engineering Pipeline
+
+Implemented an end-to-end AI-ready data engineering pipeline using AWS.
+
+### Highlights
+
+- Downloaded UCI Bank Marketing dataset
+- Built Amazon S3 Data Lake
+- Implemented dataset versioning
+- Generated immutable manifests
+- Created AWS Glue Crawlers
+- Built Glue Data Catalog
+- Performed data profiling
+- Created AI-ready curated dataset
+- Generated documentation artifacts
+- Created reusable data card
+
+➡️ **Project Details:**  
+**Session-2/**
+
+---
+
+# Skills Demonstrated
 
 - Python
 - Pandas
-- PyArrow
-- Boto3
-- JSON
-- Parquet
-- Jupyter Notebook
+- AWS SDK (Boto3)
+- Amazon S3
+- AWS Glue
+- Amazon Athena
+- Data Engineering
+- ETL Pipelines
+- Data Catalog
+- AI Data Preparation
+- Dataset Versioning
 
 ---
 
-# Dataset
+# Future Work
 
-**Dataset Name**
-
-UCI Bank Marketing Dataset
-
-Dataset Source
-
-https://archive.ics.uci.edu/ml/datasets/bank+marketing
-
-Dataset contains customer marketing campaign information used to predict whether a customer subscribes to a term deposit.
-
----
-
-# Project Features
-
-✔ Automated dataset ingestion
-
-✔ Data versioning
-
-✔ Schema generation
-
-✔ Metadata manifest creation
-
-✔ S3 data lake organization
-
-✔ Data profiling
-
-✔ Feature engineering
-
-✔ Label engineering
-
-✔ Glue Data Catalog
-
-✔ Glue Crawlers
-
-✔ Athena-ready metadata
-
-✔ AI-ready Parquet dataset
-
-✔ Data Card generation
-
----
-
-# Folder Structure
-
-```
-Session-2
-│
-├── README.md
-├── aws_ai_data_engineering_pipeline.ipynb
-│
-├── architecture
-│     └── session2_architecture.png
-│
-├── screenshots
-│     ├── 01_s3_bucket_structure.png
-│     ├── 02_glue_database.png
-│     ├── 03_glue_crawlers.png
-│     ├── 04_glue_tables.png
-│     ├── 05_glue_job.png
-│     ├── 06_manifest_output.png
-│     ├── 07_data_profiling_results.png
-│     ├── 08_data_card.png
-│     └── 09_artifact_inventory.png
-│
-├── outputs
-│
-└── assets
-```
-
----
-
-# Screenshots
-
-## Amazon S3 Data Lake
-
-![](screenshots/01_s3_bucket_structure.png)
-
----
-
-## AWS Glue Database
-
-![](screenshots/02_glue_database.png)
-
----
-
-## AWS Glue Crawlers
-
-![](screenshots/03_glue_crawlers.png)
-
----
-
-## AWS Glue Tables
-
-![](screenshots/04_glue_tables.png)
-
----
-
-## AWS Glue Job
-
-![](screenshots/05_glue_job.png)
-
----
-
-## Dataset Manifest
-
-![](screenshots/06_manifest_output.png)
-
----
-
-## Data Profiling Results
-
-![](screenshots/07_data_profiling_results.png)
-
----
-
-## Data Card
-
-![](screenshots/08_data_card.png)
-
----
-
-## Generated Artifacts
-
-![](screenshots/09_artifact_inventory.png)
-
----
-
-# Outputs Generated
-
-The pipeline generates the following artifacts:
-
-- Version Manifest
-- Dataset Profile
-- Schema Definition
-- AI-ready Parquet Dataset
-- Label Dataset
-- Label Audit Report
-- Data Card
-- Athena Profiling Results
-- Artifact Inventory
-
----
-
-# Key Learning Outcomes
-
-Through this project I gained practical experience with:
-
-- Designing an AI-ready data engineering pipeline
-- Organizing datasets inside an S3 data lake
-- Working with AWS Glue Crawlers and Data Catalog
-- Building metadata-driven pipelines
-- Dataset versioning and auditability
-- Feature engineering for Machine Learning
-- Label engineering
-- Generating reusable AI datasets
-- Working with Parquet datasets
-- Producing data cards for responsible AI workflows
-
----
-
-# Future Improvements
-
-- Automate pipeline using AWS Step Functions
-- Integrate AWS Glue Workflows
-- Add AWS Lambda event triggers
-- Create CI/CD deployment using GitHub Actions
-- Integrate Amazon Bedrock for metadata enrichment
-- Deploy downstream ML training pipeline using SageMaker
+- Session 3 – Feature Engineering
+- Session 4 – Machine Learning Pipeline
+- Session 5 – Model Deployment
+- Session 6 – MLOps Pipeline
 
 ---
 
@@ -283,14 +126,9 @@ Through this project I gained practical experience with:
 
 **Shrivathsan K M**
 
-GitHub
-
+GitHub:
 https://github.com/Vathsan07
 
 ---
 
-# License
-
-This repository is created for educational purposes as part of the BITS Pilani AI Engineering Program.
-
-The original dataset belongs to the UCI Machine Learning Repository.
+⭐ If you found this repository useful, consider giving it a star.
