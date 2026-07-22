@@ -1,0 +1,26 @@
+{
+  "dataset_version": "v1",
+  "source_url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+  "raw_file_md5": "f6cb2c1256ffe2836b36df321f46e92c",
+  "schema_hash": "2e2591025f6303695112f07746e7ef93",
+  "row_count": 41188,
+  "column_count": 29,
+  "created_at_utc": "2026-07-21T16:17:38.286961+00:00",
+  "s3_objects": {
+    "raw_original": {
+      "uri": "s3://bits-ai-de-1464-20260721161520-us-east-1/module2/session2/raw/uci/bank-additional-full.csv",
+      "version_id": "3r3WvTKFsKktbmM8hJm2TmvervbpjuPI"
+    },
+    "augmented_csv": {
+      "uri": "s3://bits-ai-de-1464-20260721161520-us-east-1/module2/session2/raw/augmented/bank_marketing_augmented.csv",
+      "version_id": "mZctry0qsD06HVWkz1buoeBjdUp.hK5u"
+    },
+    "validated_parquet": {
+      "uri": "s3://bits-ai-de-1464-20260721161520-us-east-1/module2/session2/validated/bank_marketing_augmented_parquet/bank_marketing_augmented.parquet",
+      "version_id": "zIkC8pISDkLMqYvIWsKxjSLNyoPXgPAo"
+    }
+  },
+  "leakage_exclusion": [
+    "duration"
+  ]
+}

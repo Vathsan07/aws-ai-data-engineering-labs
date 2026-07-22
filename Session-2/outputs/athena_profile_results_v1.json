@@ -1,0 +1,83 @@
+{
+  "target_by_age_group": [
+    {
+      "age_group_50plus": 0,
+      "n": 33133,
+      "positive_rate": 0.10475960522741677
+    },
+    {
+      "age_group_50plus": 1,
+      "n": 8055,
+      "positive_rate": 0.14512725015518313
+    }
+  ],
+  "target_by_job": [
+    {
+      "job": "admin.",
+      "n": 10422,
+      "positive_rate": 0.12972558050278257
+    },
+    {
+      "job": "blue-collar",
+      "n": 9254,
+      "positive_rate": 0.06894315971471796
+    },
+    {
+      "job": "technician",
+      "n": 6743,
+      "positive_rate": 0.10826041821147857
+    },
+    {
+      "job": "services",
+      "n": 3969,
+      "positive_rate": 0.08138070042831948
+    },
+    {
+      "job": "management",
+      "n": 2924,
+      "positive_rate": 0.1121751025991792
+    },
+    {
+      "job": "retired",
+      "n": 1720,
+      "positive_rate": 0.25232558139534883
+    },
+    {
+      "job": "entrepreneur",
+      "n": 1456,
+      "positive_rate": 0.08516483516483517
+    },
+    {
+      "job": "self-employed",
+      "n": 1421,
+      "positive_rate": 0.10485573539760731
+    },
+    {
+      "job": "housemaid",
+      "n": 1060,
+      "positive_rate": 0.1
+    },
+    {
+      "job": "unemployed",
+      "n": 1014,
+      "positive_rate": 0.14201183431952663
+    },
+    {
+      "job": "student",
+      "n": 875,
+      "positive_rate": 0.3142857142857143
+    },
+    {
+      "job": "unknown",
+      "n": 330,
+      "positive_rate": 0.11212121212121212
+    }
+  ],
+  "missing_unknown_categories": [
+    {
+      "unknown_job": 330,
+      "unknown_education": 1731,
+      "unknown_marital": 80
+    }
+  ]
+}

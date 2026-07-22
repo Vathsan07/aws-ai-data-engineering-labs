@@ -1,0 +1,118 @@
+[
+  {
+    "name": "age",
+    "dtype": "int64"
+  },
+  {
+    "name": "job",
+    "dtype": "object"
+  },
+  {
+    "name": "marital",
+    "dtype": "object"
+  },
+  {
+    "name": "education",
+    "dtype": "object"
+  },
+  {
+    "name": "default",
+    "dtype": "object"
+  },
+  {
+    "name": "housing",
+    "dtype": "object"
+  },
+  {
+    "name": "loan",
+    "dtype": "object"
+  },
+  {
+    "name": "contact",
+    "dtype": "object"
+  },
+  {
+    "name": "month",
+    "dtype": "object"
+  },
+  {
+    "name": "day_of_week",
+    "dtype": "object"
+  },
+  {
+    "name": "duration",
+    "dtype": "int64"
+  },
+  {
+    "name": "campaign",
+    "dtype": "int64"
+  },
+  {
+    "name": "pdays",
+    "dtype": "int64"
+  },
+  {
+    "name": "previous",
+    "dtype": "int64"
+  },
+  {
+    "name": "poutcome",
+    "dtype": "object"
+  },
+  {
+    "name": "emp.var.rate",
+    "dtype": "float64"
+  },
+  {
+    "name": "cons.price.idx",
+    "dtype": "float64"
+  },
+  {
+    "name": "cons.conf.idx",
+    "dtype": "float64"
+  },
+  {
+    "name": "euribor3m",
+    "dtype": "float64"
+  },
+  {
+    "name": "nr.employed",
+    "dtype": "float64"
+  },
+  {
+    "name": "y",
+    "dtype": "object"
+  },
+  {
+    "name": "customer_id",
+    "dtype": "object"
+  },
+  {
+    "name": "event_month_num",
+    "dtype": "int64"
+  },
+  {
+    "name": "event_day_num",
+    "dtype": "int64"
+  },
+  {
+    "name": "event_time",
+    "dtype": "object"
+  },
+  {
+    "name": "label",
+    "dtype": "int64"
+  },
+  {
+    "name": "age_group_50plus",
+    "dtype": "int64"
+  },
+  {
+    "name": "source_system",
+    "dtype": "object"
+  },
+  {
+    "name": "ingested_at_utc",
+    "dtype": "object"
+  }
+]
